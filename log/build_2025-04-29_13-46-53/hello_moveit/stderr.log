@@ -1,0 +1,19 @@
+[01m[K/home/dev/ws_moveit/src/hello_moveit/src/hello_moveit.cpp:5:5:[m[K [01;35m[Kwarning: [m[Ksecond argument of ‘[01m[Kint[01;32m[K main[m[K(int, char***)[m[K’ should be ‘[01m[Kchar **[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmain-Wmain]8;;[m[K]
+    5 | int [01;35m[Kmain[m[K(int argc, char ** argv[])
+      |     [01;35m[K^~~~[m[K
+[01m[K/home/dev/ws_moveit/src/hello_moveit/src/hello_moveit.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char***)[m[K’:
+[01m[K/home/dev/ws_moveit/src/hello_moveit/src/hello_moveit.cpp:8:22:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kchar***[m[K’ to ‘[01m[Kconst char* const*[m[K’
+    8 |   rclcpp::init(argc, [01;31m[Kargv[m[K);
+      |                      [01;31m[K^~~~[m[K
+      |                      [01;31m[K|[m[K
+      |                      [01;31m[Kchar***[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/dev/ws_moveit/src/hello_moveit/src/hello_moveit.cpp:2[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:77:24:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid rclcpp::[01;32m[Kinit[m[K(int, const char* const*, const InitOptions&, SignalHandlerOptions)[m[K’
+   77 |   [01;36m[Kchar const * const * argv[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/hello_moveit.dir/build.make:76: CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/hello_moveit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
